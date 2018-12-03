@@ -1,21 +1,7 @@
-# myapp
+# 移动端常用功能app
+用了Vue的全家桶和sass预编译，写的是一个手机端的app，功能包括，电影，音乐，图片，书籍。
+电影：主要是通过代理访问豆瓣的api接口，然后通过axios返回JSON数据，切割成一个个对象。通过懒加载的方式，每次只请求5条，通过用户的下滑再次触发请求访问。
+音乐：一个简单的播放器，包括切歌，歌单等功能。通过切割Irc文件，把歌词和音乐播放时间对应上，监听滚动条事件，实现同步滚动，歌词高亮。
+书籍：没怎么写，只是写了一个轮播图
+图片：仿照百度图片，点卡放大，产生一个遮罩层，再次点击消失
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
